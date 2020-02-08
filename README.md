@@ -1,4 +1,4 @@
-# css-grid
+# kwiniarski97.github.io
 
 ## Project setup
 ```
