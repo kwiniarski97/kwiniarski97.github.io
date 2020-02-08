@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HomePage msg="Welcome to Your Vue.js App" />
+    <h1>My notebook</h1>
+    <p>
+      Here I add some random things that I find interesting.
+    </p>
   </div>
 </template>
 
 <script lang="ts">
-// @ is an alias to /src
-import HomePage from "@/components/HomePage.vue";
+import { Component, Vue } from "vue-property-decorator";
 
-export default {
-  name: "Home",
-  components: {
-    HomePage
-  }
-};
+@Component
+export default class Home extends Vue {}
 </script>
+
+<style lang="scss" scoped>
+.home {
+  text-align: center;
+}
+</style>

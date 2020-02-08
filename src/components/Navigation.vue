@@ -16,18 +16,19 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Routes from "@/router/routes";
 
 @Component
 export default class Navigation extends Vue {
   links: Link[] = [
     {
       text: "Home",
-      link: "/",
+      link: Routes.HOME_PAGE,
       extraStyle: { fontWeight: "bold" }
     },
     {
-      text: "css-grid",
-      link: "/about"
+      text: "CSS Grid",
+      link: Routes.CSS_GRID
     }
   ];
 }

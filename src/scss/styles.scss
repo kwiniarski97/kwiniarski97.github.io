@@ -4,17 +4,13 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
 html {
   font-family: Lato, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $textColor;
+  background-color: whitesmoke;
+  font-size: 1.5em;
 }
 
 a {
@@ -27,10 +23,22 @@ a {
   }
 
   &:hover {
-    color: darken($textAccent, 10%);
+    color: $textAccent;
   }
 
   &:active {
-    color: darken($textAccent, 20%);
+    color: darken($textAccent, 10%);
   }
+}
+
+.b {
+  font-weight: bold;
+}
+
+.i {
+  font-style: italic;
+}
+
+.u {
+  text-decoration: underline;
 }
