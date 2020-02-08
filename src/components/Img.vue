@@ -14,6 +14,7 @@ export default class Img extends Vue {
 
 <style lang="scss">
 .image {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>

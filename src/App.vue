@@ -33,7 +33,7 @@ $headerHeight: 40px;
   grid-template-areas:
     ". header ."
     "nav main ad";
-  grid-template-columns: 1fr 9fr 2fr;
+  grid-template-columns: minmax(150px, 1fr) 9fr 2fr;
   grid-template-rows: $headerHeight auto;
   grid-gap: 16px;
 }
@@ -44,6 +44,12 @@ $headerHeight: 40px;
 
 #nav {
   grid-area: nav;
+  text-align: right;
+
+  li {
+    list-style: none;
+    padding: 0;
+  }
 }
 
 #main {
@@ -52,9 +58,31 @@ $headerHeight: 40px;
 
 #meme-wrapper {
   grid-area: ad;
+  text-align: center;
   #meme {
     top: $headerHeight;
     position: sticky;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #app {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "ad";
+    grid-template-columns: 12fr;
+    grid-template-rows: $headerHeight $headerHeight auto 400px;
+  }
+
+  #nav {
+    text-align: left;
+
+    li {
+      display: inline;
+      padding: 5px;
+    }
   }
 }
 </style>

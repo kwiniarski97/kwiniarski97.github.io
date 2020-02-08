@@ -1,6 +1,6 @@
 <template lang="html">
-  <nav class="navigation">
-    <ul class="navigation__list">
+  <nav>
+    <ul>
       <li
         v-for="(link, index) in links"
         :key="`link-${index}`"
@@ -39,13 +39,3 @@ interface Link {
   extraStyle?: { [property: string]: string };
 }
 </script>
-
-<style lang="scss" scoped>
-.navigation {
-  text-align: right;
-
-  &__list {
-    list-style: none;
-  }
-}
-</style>

@@ -22,7 +22,11 @@ import Meme from "@/models/meme";
   }
 })
 export default class MemeComponent extends Vue {
-  meme: Meme = {};
+  meme!: Meme;
+  constructor() {
+    super();
+    this.meme = {} as Meme;
+  }
 
   mounted() {
     this.fetchMeme();
@@ -36,6 +40,6 @@ export default class MemeComponent extends Vue {
 
 <style lang="scss" scoped>
 .meme {
-  display: block;
+  display: inline-block;
 }
 </style>
