@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.97af57ad04027bdd1e2c5e6cf941f71c.js"
+  "/precache-manifest.bcf6bf0c8b0b2dbb9127f2f76efe69f1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "kwiniarski97.github.io"});
