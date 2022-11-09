@@ -1,0 +1,15 @@
+:root {
+    --primary: #ffffff;
+    --background: rgba(0,0,0,0.7);
+    --background-darker: rgba(0,0,0,0.9);
+    --curve-factor: 8px;
+    --dimming-factor: 0.6;
+}
+
+header {
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+}
