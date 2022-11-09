@@ -7,9 +7,9 @@
 }
 
 header {
-    display: none;
+    display: none !important;
 }
 
 .home {
-    min-height: 100vh;
+    min-height: 100vh !important;
 }
