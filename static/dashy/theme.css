@@ -1,4 +1,4 @@
-:root {
+html[data-theme='transparent'] {
     --primary: #ffffff;
     --background: rgba(0,0,0,0.7);
     --background-darker: rgba(0,0,0,0.9);
@@ -6,10 +6,10 @@
     --dimming-factor: 0.6;
 }
 
-header {
+html[data-theme='transparent'] header {
     display: none !important;
 }
 
-.home {
+html[data-theme='transparent'] .home {
     min-height: 100vh !important;
 }
